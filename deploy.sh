@@ -1,6 +1,6 @@
 #!/bin/bash
-cd /path/to/project/on/EC2 
+cd /home/ec2-user/sample-next-app
 git pull origin master
-yarn install &&
-yarn build &&
-pm2 restart [name] 
+npm install &&
+npm run dev &&
+pm2 restart [my-app] 
